@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @contact.name %>
+  <strong>Imagem:</strong>
+<%= image_tag(@contact.image_url.to_s) %>
 </p>
 
 <p>
-  <strong>Phone:</strong>
-  <%= @contact.phone %>
+  <strong>Name:</strong>
+  <%= @contact.name %>
 </p>
 
 <p>
@@ -16,8 +16,8 @@
 </p>
 
 <p>
-  <strong>Imagem:</strong>
-  <%= @contact.imagem %>
+  <strong>Phone:</strong>
+  <%= @contact.phone %>
 </p>
 
 <%= link_to 'Edit', edit_contact_path(@contact) %> |

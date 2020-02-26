@@ -7,7 +7,9 @@
     <table class="table table-striped">
       <thead>
         <tr>
+          <th>Foto</th>
           <th>Nome</th>
+          <th>Instagram</th>
           <th>Telefone</th>
           <th colspan="2">
             Ações
@@ -27,7 +29,13 @@
         <% @contacts.each do |c| %>
         <tr>
           <td>
+            <%= image_tag(c.image_url.to_s) %>
+          </td>
+          <td>
             <%= c.name %>
+          </td>
+          <td>
+            <%= c.instagram %>
           </td>
           <td>
             <%= c.phone %>
