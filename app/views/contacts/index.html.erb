@@ -29,7 +29,7 @@
         <% @contacts.each do |c| %>
         <tr>
           <td>
-            <%= image_tag(c.image_url.to_s) %>
+            <%= image_tag(c.image_url(:thumb).to_s) %> 
           </td>
           <td>
             <%= c.name %>

@@ -13,6 +13,7 @@ gem 'puma', '~> 4.1'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'carrierwave'
+gem 'mini_magick'
 
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
